@@ -56,6 +56,11 @@
 .track() {
   /* The track should fill the range element. */
   width: 100%;
+  
+  /* Since range elements are special input elements, they should reflect
+   * user interaction so when user hover on range track element the cusror should 
+   * be pointer. */
+  cursor: pointer;
 
   /* The track should be tall enough to contain the thumb without clipping it.
    * It is very tricky to make the thumb show outside the track on IE 11, and
